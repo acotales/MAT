@@ -20,7 +20,7 @@ A simple PowerShell-based application to activate Microsoft Windows and Microsof
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="assets/screenshot.png" alt="MAT Interface" width="600">
+  <img src="assets/screenshot.png" alt="MAT Interface" width="500">
 </p>
 
 ## 🌟 Features
