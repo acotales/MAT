@@ -143,16 +143,13 @@ if exist "%EXE_PATH%" (
         powershell -Command "Unblock-File -Path '%EXE_PATH%'" 2>nul
     )
 
-    :: Run the executable file
-    start "" "%EXE_PATH%"
 ) else (
     echo %REPO_NAME%.exe not found at %EXE_PATH%. Re-downloading.
     goto :DownloadFiles
 )
 
-call :ShowMessageBox "Installation completed successfully!" "Success" 64
-pause
-exit /b 0
+:: Run the executable file
+start "" "%EXE_PATH%"
 
 :: ---------------------------
 ::  Helper function: Show a VBScript message box
