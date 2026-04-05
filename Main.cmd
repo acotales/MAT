@@ -8,7 +8,7 @@ net session >nul 2>&1
 if %errorlevel% neq 0 (
     echo Requesting administrator privileges...
     :: Relaunch the script as admin using PowerShell
-    powershell -Command "Start-Process '%~f0' -Verb RunAs"
+    powershell -WindowStyle Hidden -Command "Start-Process '%~f0' -Verb RunAs -WindowStyle Hidden"
     exit /b
 )
 
@@ -135,9 +135,16 @@ if exist "%CERT_PATH%" (
 
 :: Unblock the EXE (removes "downloaded from internet" marker)
 if exist "%EXE_PATH%" (
-    echo Unblocking %REPO_NAME%.exe.
-    powershell -Command "Unblock-File -Path '%EXE_PATH%'" 2>nul
-    echo File unblocked successfully.
+
+    powershell -Command "Get-Item '%targetFile%' -Stream 'Zone.Identifier' -ErrorAction SilentlyContinue" >nul 2>&1
+
+    if %errorlevel% equ 0 (
+        echo Unblocking %REPO_NAME%.exe.
+        powershell -Command "Unblock-File -Path '%EXE_PATH%'" 2>nul
+    )
+
+    :: Run the executable file
+    start "" "%EXE_PATH%"
 ) else (
     echo %REPO_NAME%.exe not found at %EXE_PATH%. Re-downloading.
     goto :DownloadFiles
