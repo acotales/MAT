@@ -26,7 +26,7 @@ A simple application to activate Microsoft Windows and Microsoft Office licenses
 
 - **Download** the latest release version [here](https://github.com/acotales/MAT/releases/latest/download/MAT.exe).
 
-- **Unblock the File** (optional) 
+- **Unblock the File**:
    - Right-click the downloaded `.exe` file.
    - Select **Properties**.
    - Under the **General** tab, check the **Unblock** box at the bottom.
