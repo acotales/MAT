@@ -24,13 +24,12 @@ A simple application to activate Microsoft Windows and Microsoft Office licenses
 
 ## 🚀 How to Use
 
-- **Download** the `RUN.cmd` file [here](https://github.com/acotales/MAT/releases/latest/download/RUN.cmd).
-- Right-click and Select **"Run as Administrator"**
+- **Download and Run** the `Run.bat` file [here](https://github.com/acotales/MAT/releases/latest/download/Run.bat).
 
 
 ## ⚠️ Disclaimer
 
-This tool is for **educational purposes only**. The author does not condone or encourage the use of this tool to bypass legitimate software licensing. Please support software developers by purchasing genuine licenses from Microsoft. Use this tool at your own risk.
+This tool is for **educational purposes only**. The author does not condone or encourage the use of this tool to bypass legitimate software licensing. Use this tool at your own risk.
 
 ## 📜 License
 
