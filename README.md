@@ -24,7 +24,7 @@ A simple application to activate Microsoft Windows and Microsoft Office licenses
 
 ## 🚀 How to Use
 
-- **Download and Run** the `Run.bat` file [here](https://github.com/acotales/MAT/releases/latest/download/Run.bat).
+- **Download and Run** the `Launch.vbs` file [here](https://github.com/acotales/MAT/releases/latest/download/Launch.vbs).
 
 
 ## ⚠️ Disclaimer
