@@ -224,6 +224,7 @@ if not exist "%EXE_PATH%" (
 )
 
 echo [Launch] Starting application: %EXE_PATH%
+start "" "%EXE_PATH%"
 :: Exit cleanly — the VBS launcher will show the success message box.
 exit /b 0
 
